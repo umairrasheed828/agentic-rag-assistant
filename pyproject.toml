@@ -6,6 +6,11 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "arxiv>=4.0.0",
+    "langchain>=1.3.4",
+    "langchain-mcp-adapters>=0.2.2",
+    "langchain-openai>=1.2.2",
+    "langgraph>=1.2.4",
+    "mcp>=1.27.2",
     "pgvector>=0.4.2",
     "psycopg[binary]>=3.3.4",
     "pydantic>=2.13.4",
@@ -27,5 +32,11 @@ pythonpath = ["."]
 plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
-module = ["sentence_transformers.*", "rank_bm25.*", "pgvector.*", "arxiv.*"]
+module = [
+    "sentence_transformers.*",
+    "rank_bm25.*",
+    "pgvector.*",
+    "arxiv.*",
+    "langchain_mcp_adapters.*",
+]
 ignore_missing_imports = true
