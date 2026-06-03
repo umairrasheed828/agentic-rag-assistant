@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     langsmith_api_key: str
     langsmith_tracing: bool = True
     openai_api_key: str | None = None
+    database_url: str
 
 
 settings = Settings()
