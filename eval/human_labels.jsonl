@@ -1,0 +1,5 @@
+{"question": "What is RAGAS used for?", "faithfulness": 5, "relevance": 5, "correctness": 5}
+{"question": "What bias did the 'Rankers, Judges, and Assistants' work find in LLM judges?", "faithfulness": 5, "relevance": 5, "correctness": 5}
+{"question": "What does 'Generation-Time vs. Post-hoc Citation' compare?", "faithfulness": 5, "relevance": 5, "correctness": 5}
+{"question": "Why is multi-hop reasoning hard to evaluate in RAG systems?", "faithfulness": 3, "relevance": 5, "correctness": 3}
+{"question": "Name a common metric used to evaluate LLM text generation.", "faithfulness": 1, "relevance": 5, "correctness": 1}

@@ -1,0 +1,5 @@
+{"question": "What is RAGAS used for?", "reference_answer": "RAGAS is a framework for reference-free automated evaluation of retrieval-augmented generation systems."}
+{"question": "What bias did the 'Rankers, Judges, and Assistants' work find in LLM judges?", "reference_answer": "LLM judges show bias toward LLM-based rankers and struggle to discern subtle performance differences."}
+{"question": "What does 'Generation-Time vs. Post-hoc Citation' compare?", "reference_answer": "It compares producing citations during answer generation versus adding them afterward, weighing trade-offs in citation accuracy and trustworthiness."}
+{"question": "Why is multi-hop reasoning hard to evaluate in RAG systems?", "reference_answer": "Because correct answers require combining information across multiple retrieved chunks, so individual pieces can look irrelevant alone and need context-aware evaluation."}
+{"question": "Name a common metric used to evaluate LLM text generation.", "reference_answer": "ROUGE scores."}
