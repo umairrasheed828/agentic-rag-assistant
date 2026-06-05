@@ -17,7 +17,9 @@ question = st.text_input(
 if st.button("Ask", type="primary") and question.strip():
     with st.spinner("Thinking…"):
         try:
-            resp = requests.post(f"{API_URL}/ask", json={"question": question}, timeout=120)
+            resp = requests.post(
+                f"{API_URL}/ask", json={"question": question}, timeout=120
+            )
             resp.raise_for_status()
             st.markdown(resp.json()["answer"])
         except requests.exceptions.RequestException as e:
