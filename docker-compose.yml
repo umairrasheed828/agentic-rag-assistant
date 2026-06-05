@@ -11,5 +11,18 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  api:
+    build: .
+    container_name: rag-api
+    env_file:
+      - .env
+    environment:
+      # override the .env value: inside the network the DB host is "db", not localhost
+      DATABASE_URL: postgresql://rag:ragpassword@db:5432/ragdb
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
 volumes:
   pgdata:
