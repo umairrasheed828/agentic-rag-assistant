@@ -28,7 +28,9 @@ dependencies = [
 dev = [
     "mypy>=2.1.0",
     "pytest>=9.0.3",
+    "requests>=2.33.1",
     "ruff>=0.15.15",
+    "streamlit>=1.58.0",
 ]
 [tool.pytest.ini_options]
 pythonpath = ["."]
