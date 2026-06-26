@@ -1,5 +1,7 @@
 def greet():
     return "hello from greet()"
+
+
 print("this top level line always runs.")
 
 if __name__ == "__main__":
